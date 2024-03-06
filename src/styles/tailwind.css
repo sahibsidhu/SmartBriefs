@@ -1,0 +1,77 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.logoContainer {
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  
+    @media (max-width: 600px) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+}
+  
+.logo {
+    height: 27vmin;
+    border-radius: 15%;
+    padding: 0 5%;
+    margin: 3% 0;
+  
+    @media (max-width: 600px) {
+      height: 35vmin;
+    }
+}
+  
+.link {
+    text-decoration: none;
+    color: rgba(21, 101, 192);
+}
+  
+.image {
+    margin-left: 20px;
+}
+  
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 3%;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(21, 101, 192);
+    margin: 0 12px;
+    text-align: center;
+    height: 25vmin;
+}
+  
+@media (max-width: 600px) {
+    .card {
+      flex-direction: column-reverse;
+      text-align: center;
+      width: 100%;
+      height: auto;
+  
+      &:nth-of-type(1) {
+        margin-bottom: 12px;
+      }
+    }
+}
+  
+.infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+@media (max-width: 600px) {
+    .infoContainer {
+    flex-direction: column;
+    }
+}
+
+  
